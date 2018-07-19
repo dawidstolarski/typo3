@@ -1,0 +1,249 @@
+{
+    "tt_content": {
+        "elements": {
+            "add_on_package": {
+                "label": "Add-on package",
+                "key": "add_on_package",
+                "shortLabel": "",
+                "description": "",
+                "icon": "fa-plus-square",
+                "color": "#000000",
+                "columns": [
+                    "header",
+                    "header_link",
+                    "subheader",
+                    "tx_mask_number",
+                    "image",
+                    "bodytext"
+                ],
+                "labels": [
+                    "",
+                    "",
+                    "",
+                    "Number",
+                    "",
+                    ""
+                ],
+                "options": {
+                    "5": "rte"
+                }
+            },
+            "hero_slider": {
+                "label": "Hero Slider",
+                "key": "hero_slider",
+                "shortLabel": "",
+                "description": "",
+                "icon": "fa-file-picture-o",
+                "color": "#000000",
+                "columns": [
+                    "header",
+                    "image"
+                ],
+                "labels": [
+                    "",
+                    ""
+                ]
+            },
+            "teaser_block": {
+                "label": "Teaser Block",
+                "key": "teaser_block",
+                "shortLabel": "",
+                "description": "",
+                "icon": "fa-bar-chart",
+                "color": "#000000",
+                "columns": [
+                    "header",
+                    "subheader",
+                    "header_link",
+                    "tx_mask_teaser_block_icon"
+                ],
+                "labels": [
+                    "",
+                    "",
+                    "",
+                    "Icon"
+                ]
+            },
+            "teaser_button": {
+                "label": "Teaser Button",
+                "key": "teaser_button",
+                "shortLabel": "",
+                "description": "",
+                "icon": "fa-play-circle-o",
+                "color": "#000000",
+                "columns": [
+                    "header",
+                    "header_link",
+                    "tx_mask_category"
+                ],
+                "labels": [
+                    "",
+                    "",
+                    "category"
+                ]
+            },
+            "teaser_section": {
+                "label": "Teaser Section",
+                "key": "teaser_section",
+                "shortLabel": "",
+                "description": "",
+                "icon": "fa-outdent",
+                "color": "#000000",
+                "columns": [
+                    "header",
+                    "subheader",
+                    "header_link",
+                    "bodytext",
+                    "image",
+                    "tx_mask_teaser_block_icon"
+                ],
+                "labels": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "Icon"
+                ],
+                "options": {
+                    "3": "rte"
+                }
+            }
+        },
+        "sql": {
+            "tx_mask_teaser_block_icon": {
+                "tt_content": {
+                    "tx_mask_teaser_block_icon": "tinytext"
+                }
+            },
+            "tx_mask_number": {
+                "tt_content": {
+                    "tx_mask_number": "tinytext"
+                }
+            },
+            "tx_mask_category": {
+                "tt_content": {
+                    "tx_mask_category": "tinytext"
+                }
+            }
+        },
+        "tca": {
+            "tx_mask_teaser_block_icon": {
+                "config": {
+                    "type": "select",
+                    "renderType": "selectSingle",
+                    "size": "",
+                    "items": [
+                        [
+                            "",
+                            "0"
+                        ],
+                        [
+                            "Speech bubble",
+                            "icon-speech"
+                        ],
+                        [
+                            "Gears",
+                            "icon-gears"
+                        ],
+                        [
+                            "Cube box",
+                            "icon-package"
+                        ],
+                        [
+                            "Success chart",
+                            "icon-success"
+                        ],
+                        [
+                            ""
+                        ]
+                    ],
+                    "foreign_table": "",
+                    "foreign_table_where": "",
+                    "fileFolder": "",
+                    "fileFolder_extList": "",
+                    "fileFolder_recursions": "",
+                    "maxitems": "",
+                    "autoSizeMax": ""
+                },
+                "exclude": "1",
+                "key": "teaser_block_icon"
+            },
+            "tx_mask_number": {
+                "config": {
+                    "type": "input",
+                    "eval": "int",
+                    "default": "",
+                    "placeholder": "",
+                    "size": "",
+                    "max": "",
+                    "range": {
+                        "lower": "",
+                        "upper": ""
+                    }
+                },
+                "exclude": "1",
+                "key": "number"
+            },
+            "tx_mask_category": {
+                "config": {
+                    "type": "select",
+                    "renderType": "selectSingle",
+                    "size": "",
+                    "items": [
+                        [
+                            "",
+                            "0"
+                        ],
+                        [
+                            "Demand Planners",
+                            "id=20"
+                        ],
+                        [
+                            "Content types",
+                            "18"
+                        ],
+                        [
+                            "Channels",
+                            "19"
+                        ],
+                        [
+                            "Material Planners",
+                            "17"
+                        ],
+                        [
+                            "Executives",
+                            "16"
+                        ],
+                        [
+                            "How to videos",
+                            "3"
+                        ],
+                        [
+                            "Blog article",
+                            "2"
+                        ]
+                    ],
+                    "foreign_table": "",
+                    "foreign_table_where": "",
+                    "fileFolder": "",
+                    "fileFolder_extList": "",
+                    "fileFolder_recursions": "",
+                    "maxitems": "",
+                    "autoSizeMax": ""
+                },
+                "exclude": "1",
+                "key": "category"
+            }
+        }
+    },
+    "sys_file_reference": {
+        "sql": {
+            "tx_mask_image": {
+                "sys_file_reference": {
+                    "tx_mask_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            }
+        }
+    }
+}

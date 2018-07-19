@@ -1,0 +1,84 @@
+<header class="header">
+	<div class="container clearfix">
+		<f:link.page pageUid="{logoPid}" class="logo">
+			<img src="fileadmin/templates/bigbyte2015/img/logo.png" alt="bigbyte">
+		</f:link.page>
+		<nav id="dl-menu" class="mainnavigation dl-menuwrapper">
+			<button class="dl-trigger">Menu</button>
+            <f:cObject typoscriptObjectPath="lib.mainnavigation"/>
+		</nav>
+	</div>
+</header>
+
+<div class="hero">
+	<f:cObject typoscriptObjectPath="lib.heroContent"/>
+</div>
+
+<div class="content container">
+	<!--TYPO3SEARCH_begin-->
+    <f:cObject typoscriptObjectPath="lib.content"/>
+	<!--TYPO3SEARCH_end-->
+</div>
+
+<footer class="footer">
+	<div class="container">
+		<div class="sociallinks">
+			<a href="https://www.linkedin.com/pub/uwe-goehring/a/20a/176" title="bigbyte on LinkedIn"><img src="fileadmin/templates/bigbyte2015/img/linkedin.png" alt="bigbyte on LinkedIn"></a>
+			<a href="https://twitter.com/uwegoe" title="bigbyte on Twitter"><img src="fileadmin/templates/bigbyte2015/img/twitter.png" alt="bigbyte on Twitter"></a>
+			<a href="http://scn.sap.com/people/uwe.goehring" title="bigbyte on SAP community network"><img src="fileadmin/templates/bigbyte2015/img/scn.png" alt="bigbyte on SAP community network"></a>
+		</div>
+		<div class="row clearfix">
+			<div class="col-2">
+				<nav class="footernavigation">
+					<f:cObject typoscriptObjectPath="lib.footernavigation"/>
+				</nav>
+			</div>
+			<div class="col-2 col-sm-6">
+				<h4>Mailing Address:</h4>
+				<address>
+					<p><b>USA</b></p>
+					<p>bigbyte software systems inc.<br>
+						99 Reade Street, PHE<br>
+						New York,<br>
+						NY 10013</p>
+				</address>
+			</div>
+			<div class="col-2 col-sm-6">
+				<h4>&nbsp;</h4>
+				<address>
+					<p>&nbsp;</p>
+					<p>bigbyte software systems inc.<br>
+						2214 NW 171st Terrace<br>
+						Pembroke Pines,<br>
+						FL 33028</p>
+				</address>
+			</div>
+			<div class="col-2 col-sm-6">
+				<h4>&nbsp;</h4>
+				<address>
+					<p><b>DE</b></p>
+					<p>bigbyte gmbh<br>
+						Hauptstraße 7<br>
+						77716 Haslach</p>
+				</address>
+			</div>
+			<div class="col-2 col-sm-6">
+				<h4>&nbsp;</h4>
+				<address>
+					<p><b>CH</b></p>
+					<p>justRED AG | bigbyte software systems<br>
+						Löwengraben 15<br>
+						6004 Luzern</p>
+				</address>
+			</div>
+			<div class="col-2 col-sm-6 phone">
+				<h4>Phone Number:</h4>
+				<p>US <a href="tel:+18775842454">+1 877 584 2454</a><br>
+				DE <a href="tel:+4978329744044">+ 49 7832 9744 044</a></p>
+			</div>
+		</div>
+		<div class="credits">
+			<p>&copy; 2015. bigbyte software systems and the bigbyte logo are trademarks of bigbyte software systems inc.</p>
+		</div>
+	</div>
+</footer>

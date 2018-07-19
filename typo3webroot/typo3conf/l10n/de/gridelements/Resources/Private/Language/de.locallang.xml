@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="de" type="array">
+			<label index="additionalStylesheet">Pfad zum Verzeichnis mit zusätzlichen Stylesheets</label>
+			<label index="nestingInListModule">Verschachtelung im Modul Liste aktivieren</label>
+		</languageKey>
+  </data>
+</T3locallangExt>

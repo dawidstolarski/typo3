@@ -1,0 +1,1 @@
+if (window.document.body.currentStyle) window.document.body.style.fontSize = window.document.body.currentStyle.fontSize;

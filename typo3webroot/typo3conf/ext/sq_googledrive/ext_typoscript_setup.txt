@@ -1,0 +1,34 @@
+
+config.tx_extbase{
+    persistence{
+        classes{
+
+            TYPO3\CMS\Extbase\Domain\Model\FrontendUserGroup {
+                subclasses {
+                    Tx_SqGoogledrive_Group = SinusQuadrat\SqGoogledrive\Domain\Model\Group
+					
+          		}
+            }
+            SinusQuadrat\SqGoogledrive\Domain\Model\Group {
+                mapping {
+                    tableName = fe_groups
+                    recordType = Tx_SqGoogledrive_Group
+                }
+            }
+            
+    	}
+    }
+}
+
+## EXTENSION BUILDER DEFAULTS END TOKEN - Everything BEFORE this line is overwritten with the defaults of the extension builder
+page.includeCSS {
+    fancytreeCSS    = EXT:sq_googledrive/Resources/Public/css/ui.fancytree.min.css
+    clndrCSS        = EXT:sq_googledrive/Resources/Public/css/clndr.css
+}
+page.includeJSFooter {
+    jqueryUI        = EXT:sq_googledrive/Resources/Public/js/jquery-ui-1.11.4.min.js
+    fancytreeJS     = EXT:sq_googledrive/Resources/Public/js/jquery.fancytree-all.min.js
+    underscoreJS    = EXT:sq_googledrive/Resources/Public/js/underscore-min.js
+    momentJS        = EXT:sq_googledrive/Resources/Public/js/moment.min.js
+    clndrJS         = EXT:sq_googledrive/Resources/Public/js/clndr.min.js
+}

@@ -1,0 +1,88 @@
+
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+	Private:
+	  Templates:
+		Calendar.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+
+<div id="event-calendar" class="event-calendar clearfix">
+	<script type="text/template" id="full-clndr-template">
+		<div class="clndr-controls">
+			<div class="clndr-previous-button">&laquo;</div>
+			<div class="clndr-next-button">&raquo;</div>
+			<div class="current-month"><%= month %> <%= year %></div>
+		</div>
+
+		<div class="clndr-grid clearfix">
+			<div class="days-of-the-week clearfix">
+				<% _.each(daysOfTheWeek, function(day) { %>
+					<div class="header-day"><%= day %></div>
+				<% }); %>
+			</div>
+			<div class="days">
+				<% _.each(days, function(day) { %>
+					<div class="<%= day.classes %>" id="<%= day.id %>"><span class="day-number"><%= day.day %></span></div>
+				<% }); %>
+			</div>
+		</div>
+		<div class="event-list">
+			<h3>EVENTS THIS MONTH</h3>
+		 	<% _.each(eventsThisMonth, function(event) { %>
+				<div class="event-item clearfix">
+					<div class="event-date">
+						<span class="event-month"><%= moment(event.start).format('MMM') %></span>
+						<span class="event-day"><%= moment(event.start).format('DD') %></span>
+					</div>
+					<h4 class="event-title"><%= event.title %></h4>
+					<% if (event.hasTime) { %>
+						<span class="event-time"><i class="icon-clock"></i><%= moment(event.start).format('H:mma') %> - <%= moment(event.end).format('H:mma') %></span>
+					<% } %>
+				</div>
+			<% }); %>
+		</div>
+	</script>
+</div>
+
+<f:comment>
+<div class="event-list">
+	<h3>Upcoming Events</h3>
+	<f:for each="{upcomingEvents}" as="event" iteration="iterator">
+		<f:if condition="{iterator.cycle} <= 2">
+			<div class="event-item clearfix">
+				<div class="event-date">
+					<span class="event-month"><f:format.date format="M">{event.start.datetime}</f:format.date></span>
+					<span class="event-day"><f:format.date format="d">{event.start.datetime}</f:format.date></span>
+				</div>
+				<h4 class="event-title">{event.summary}</h4>
+				<span class="event-time"><i class="icon-clock"></i><f:format.date format="h:ia">{event.start.datetime}</f:format.date> - <f:format.date format="h:ia">{event.end.datetime}</f:format.date></span>
+			</div>
+		</f:if>
+	</f:for>
+</div>
+</f:comment>
+
+<script type="text/javascript">
+	jQuery(function($) {
+		var events = <f:format.raw>{eventsJSON}</f:format.raw>
+
+		$('#event-calendar').clndr({
+			template: $('#full-clndr-template').html(),
+			events: events,
+			dateParameter: 'start',
+			weekOffset: 1,
+			daysOfTheWeek: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+			forceSixRows: false
+		});
+	});
+</script>
+
+</f:section>

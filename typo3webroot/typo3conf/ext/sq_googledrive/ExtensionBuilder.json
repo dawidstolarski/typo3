@@ -1,0 +1,143 @@
+{
+    "modules": [
+        {
+            "config": {
+                "position": [
+                    183,
+                    179
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": true,
+                    "_default1_show": false,
+                    "_default2_new_create": false,
+                    "_default3_edit_update": false,
+                    "_default4_delete": false,
+                    "customActions": [
+                        "getFilesInFolder",
+                        "search",
+                        "calendar"
+                    ]
+                },
+                "name": "Group",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "fe_groups",
+                    "parentClass": "\\TYPO3\\CMS\\Extbase\\Domain\\Model\\FrontendUserGroup",
+                    "sorting": false,
+                    "type": "Entity",
+                    "uid": "998119843799"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "customerlogo",
+                            "propertyType": "Image",
+                            "uid": "1031304562037"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "consultantid",
+                            "propertyType": "Integer",
+                            "uid": "533998048649"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "searchresultpage",
+                            "propertyType": "Integer",
+                            "uid": "339355465231"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "googledrivesettings",
+                            "propertyType": "Text",
+                            "uid": "1068421670462"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": []
+                }
+            }
+        }
+    ],
+    "properties": {
+        "backendModules": [],
+        "description": "Google Drive File Listing & Search",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 6.2\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "6.2",
+            "version": ""
+        },
+        "extensionKey": "sq_googledrive",
+        "name": "SQ Google Drive",
+        "originalExtensionKey": "sq_googledrive",
+        "persons": [],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "Group => list, getFilesInFolder",
+                    "noncacheableActions": "Group => list, getFilesInFolder",
+                    "switchableActions": ""
+                },
+                "key": "drivefilelist",
+                "name": "Google Drive List Plugin"
+            },
+            {
+                "actions": {
+                    "controllerActionCombinations": "Group => search",
+                    "noncacheableActions": "Group => search",
+                    "switchableActions": ""
+                },
+                "key": "drivefilesearch",
+                "name": "Google Drive Search Plugin"
+            },
+            {
+                "actions": {
+                    "controllerActionCombinations": "Group => calendar",
+                    "noncacheableActions": "Group => calendar",
+                    "switchableActions": ""
+                },
+                "key": "calendareventlist",
+                "name": "Google Calendar Event Plugin"
+            }
+        ],
+        "vendorName": "SinusQuadrat"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2016-08-25 10:10",
+        "extension_builder_version": "6.2.0",
+        "be_user": " (1)"
+    }
+}

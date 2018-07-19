@@ -1,0 +1,51 @@
+
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        Search.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+	<f:if condition="{files}">
+		<f:then>
+			<table id="search_result" style="width: 100%;">
+				<colgroup>
+					<col style="width:60%"></col>
+					<col style="width:20%"></col>
+					<col style="width:20%"></col>
+				</colgroup>
+				<thead>
+					<tr>
+						<th>Filename</th>
+						<th>Modified at</th>
+						<th>Download</th>
+					</tr>
+				</thead>
+				<tbody>
+					<f:for each="{files}" as="file">
+					<tr>
+						<td>{file.title}</td>
+						<td class="align-center"><f:format.date format="m/d/Y">{file.modifiedDate}</f:format.date></td>
+						<td class="align-center">
+							<f:if condition="{file.webContentLink}">
+								<f:link.external uri="{file.webContentLink}">Download file</f:link.external>
+							</f:if>
+						</td>
+					</tr>
+					</f:for>
+				</tbody>
+			</table>
+		</f:then>
+		<f:else>
+			<span>No files found.</span>
+		</f:else>
+	</f:if>
+
+</f:section>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-08-25T10:10:03Z" product-name="sq_googledrive">
+		<header/>
+		<body>
+			<trans-unit id="customerlogo.description">
+				<source>customerlogo</source>
+			</trans-unit>
+			<trans-unit id="consultantid.description">
+				<source>consultantid</source>
+			</trans-unit>
+			<trans-unit id="searchresultpage.description">
+				<source>searchresultpage</source>
+			</trans-unit>
+			<trans-unit id="googledrivesettings.description">
+				<source>googledrivesettings</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

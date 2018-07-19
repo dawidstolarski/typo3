@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2016-08-15T11:38:27Z">
+		<header>
+			<description>Language labels for EXT:unroll</description>
+			<authorName>Armin Vieweg</authorName>
+			<authorEmail>armin@v.ieweg.de</authorEmail>
+		</header>
+		<body>
+			<trans-unit id="extConf.buttons">
+				<source>Buttons: Controls the order of buttons. Be careful: Buttons disappear when using wrong key names here.</source>
+				<target>Buttons: Kontrolliert die Reihenfolge der Buttons. Vorsicht! Buttons verschwinden bei falsch eingegebenen Namen.</target>
+			</trans-unit>
+			<trans-unit id="extConf.unroll">
+				<source>Unroll: All save buttons are visible. No dropdown anymore.</source>
+				<target>Unroll: Alle Speichern-Buttons sind sichtbar. Kein Dropdown wird mehr angezeigt.</target>
+			</trans-unit>
+			<trans-unit id="extConf.showLabelSave">
+				<source>Show label of "save" button: Show the label of this button. Just the icon will be visible.</source>
+				<target>Zeige Beschriftung des "Speichern"-Buttons: Zeigt nur das Icon von diesem Button an.</target>
+			</trans-unit>
+			<trans-unit id="extConf.showLabelSaveDokView">
+				<source>Show label of "save and preview" button: Show the label of this button. Just the icon will be visible.</source>
+				<target>Zeige Beschriftung des "Speichern und Vorschau anzeigen"-Buttons: Zeigt nur das Icon von diesem Button an.</target>
+			</trans-unit>
+			<trans-unit id="extConf.showLabelSaveDokNew">
+				<source>Show label of "save and new" button: Show the label of this button. Just the icon will be visible.</source>
+				<target>Zeige Beschriftung des "Speichern und neue erstellen"-Buttons: Zeigt nur das Icon von diesem Button an.</target>
+			</trans-unit>
+			<trans-unit id="extConf.showLabelSaveAndClose">
+				<source>Show label of "save and close" button: Show the label of this button. Just the icon will be visible.</source>
+				<target>Zeige Beschriftung des "Speichern und schließen"-Buttons: Zeigt nur das Icon von diesem Button an.</target>
+			</trans-unit>
+			<trans-unit id="extConf.allowUserSettings">
+				<source>Allow custom user settings: The settings above are treated as defaults and users can override them in their user settings.</source>
+				<target>Benutzerspezifische Einstellungen erlauben: Die obigen Einstellungen werden als Standardwerte verwendet und können vom Benutzer in den Einstellungen überschrieben werden.</target>
+			</trans-unit>
+			<trans-unit id="userSettings.tabName" approved="yes">
+				<source>Save Buttons</source>
+				<target>Speichern Buttons</target>
+			</trans-unit>
+			<trans-unit id="userSettings.default" approved="yes">
+				<source>As defined by system settings</source>
+				<target>Wie vom System vorgegeben</target>
+			</trans-unit>
+			<trans-unit id="userSettings.enable">
+				<source>Enabled</source>
+				<target>Aktiviert</target>
+			</trans-unit>
+			<trans-unit id="userSettings.disable">
+				<source>Disabled</source>
+				<target>Deaktiviert</target>
+			</trans-unit>
+			<trans-unit id="userSettings.unroll">
+				<source>Show all save buttons</source>
+				<target>Alle Speichern Buttons anzeigen</target>
+			</trans-unit>
+			<trans-unit id="userSettings.showLabelSave">
+				<source>Show label of "save" button</source>
+				<target>Zeige Beschriftung des "Speichern"-Buttons</target>
+			</trans-unit>
+			<trans-unit id="userSettings.showLabelSaveDokView">
+				<source>Show label of "save and preview" button</source>
+				<target>Zeige Beschriftung des "Speichern und Vorschau anzeigen"-Buttons</target>
+			</trans-unit>
+			<trans-unit id="userSettings.showLabelSaveDokNew">
+				<source>Show label of "save and new" button</source>
+				<target>Zeige Beschriftung des "Speichern und neue erstellen"-Buttons</target>
+			</trans-unit>
+			<trans-unit id="userSettings.showLabelSaveAndClose">
+				<source>Show label of "save and close" button</source>
+				<target>Zeige Beschriftung des "Speichern und schließen"-Buttons</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

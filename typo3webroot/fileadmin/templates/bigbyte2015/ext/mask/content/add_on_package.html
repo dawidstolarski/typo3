@@ -1,0 +1,26 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true"></html>
+<div class="addon clearfix">
+  <f:if condition="{data.header_link}">
+    <f:link.typolink parameter="{data.header_link}" class="fancybox-inline">
+      <f:if condition="{data.image}">
+        <f:for each="{data.image}" as="file">
+          <f:image image="{file}" alt="{file.alternative}" title="{file.title}" maxWidth="219" />
+        </f:for>
+      </f:if>
+
+      <h4>
+        <span class="addon-title">{data.header}</span>
+        <span class="addon-number">({data.tx_mask_number})</span>
+      </h4>
+    </f:link.typolink>
+  </f:if>
+  <div id="addon_{data.uid}" class="addon-description">
+    <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
+    <f:if condition="{data.header_link}">
+      <f:link.typolink parameter="{data.header_link}" class="readmore">
+        Read more <i class="icon-arrow-readmore"></i>
+      </f:link.typolink>
+    </f:if>
+  </div>
+</div>
+</html>

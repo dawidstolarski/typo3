@@ -1,0 +1,115 @@
+
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+<h1>Tree for Files</h1>
+<table id="tree" style="width: 100%;">
+	<colgroup>
+		<col style="width:60%"></col>
+		<col style="width:20%"></col>
+		<col style="width:20%"></col>
+	</colgroup>
+	<thead>
+		<tr>
+			<th>Filename</th>
+			<th>Modified at</th>
+			<th>Download</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+
+<f:comment>
+<h1>Listing for Files</h1>
+
+<table class="tx_sqgoogledrive">
+	<tr>
+		<th>Filename</th>
+		<th>Modified at</th>
+		<th></th>
+		<th></th>
+	</tr>
+
+	<f:for each="{files}" as="file">
+		<tr>
+			<td>{file.title}</td>
+			<td>{file.modifiedDate}</td>
+			<td>
+				<f:if condition="{file.downloadUrl}">
+					<f:link.external uri="{file.downloadUrl}">Download</f:link.external>
+				</f:if>
+			</td>
+			<td>
+				<f:if condition="{file.webContentLink}">
+					<f:link.external uri="{file.webContentLink}">Download</f:link.external>
+				</f:if>
+			</td>
+		</tr>
+	</f:for>
+</table>
+</f:comment>
+
+<script type="text/javascript">
+	jQuery(function($) {
+		// Create the tree inside the <div id="tree"> element.
+		$("#tree").fancytree({
+			extensions: ["table"],
+			source: {
+				url: "/?eID=driveFileList",
+				method: 'post',
+				cache: false,
+				data: {
+					// 'folderId': '0BzlVSZvAoESwfnpCTXV0MDVMVk5kdkd2YXdMbm5INTN5cHVPNXFTaEdKZjdLeDVSQ29IS2s',
+					'folderId': '0B1Zl0KrzywxZSXc4VXRCQ3RsSTQ',
+					'action': 'getFilesInFolder',
+					'controller': 'Group',
+					'format': 'json'
+				}
+			},
+			lazyLoad: function(event, data) {
+				var node = data.node;
+				// Issue an ajax request to load child nodes
+				data.result = {
+					url: "/?eID=driveFileList",
+					method: 'post',
+					cache: false,
+					data: {
+						'folderId': node.data.id,
+						'action': 'getFilesInFolder',
+						'controller': 'Group',
+						'format': 'json'
+					}
+				}
+			},
+			renderColumns: function(event, data) {
+				var node = data.node,
+				$tdList = $(node.tr).find(">td");
+				$tdList.eq(1).text( moment(node.data.modifiedDate).format('L') ).addClass('align-center');
+				// $tdList.eq(2).text(node.data.downloadUrl);
+				if(node.data.webContentLink) {
+					$tdList.eq(2).html('<a href="' + node.data.webContentLink + '" target="_blank">Download file</a>').addClass('align-center');
+				}
+				// $tdList.eq(4).text(node.data.exportLink);
+			}
+		});
+	});
+</script>
+
+</f:section>

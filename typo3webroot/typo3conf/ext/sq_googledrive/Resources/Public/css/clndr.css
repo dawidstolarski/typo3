@@ -1,0 +1,131 @@
+
+.event-calendar {
+    margin: 15px;
+    font-size: 12px;
+    color: #212121;
+}
+.event-calendar .clndr-controls {
+    background: #fff;
+    padding: 0 15px;
+    text-align: center;
+}
+.event-calendar .clndr-controls .clndr-previous-button {
+    float: left;
+    text-align: left;
+}
+.event-calendar .clndr-controls .clndr-next-button {
+    float: right;
+    text-align: right;
+}
+.event-calendar .clndr-controls .clndr-previous-button,
+.event-calendar .clndr-controls .clndr-next-button {
+    -moz-user-select: none;
+    cursor: pointer;
+    width: 30px;
+    font-size: 36px;
+}
+.event-calendar .clndr-controls .clndr-previous-button:hover,
+.event-calendar .clndr-controls .clndr-next-button:hover {
+    opacity: 0.5;
+}
+.event-calendar .current-month {
+    font-size: 16px;
+    line-height: 53px;
+    text-transform: uppercase;
+}
+.event-calendar .clndr-grid {
+    margin-bottom: 30px;
+}
+.event-calendar .clndr-grid .days-of-the-week {
+    background-color: #fff;
+    width: 100%;
+}
+.event-calendar .clndr-grid .days-of-the-week .header-day {
+    float: left;
+    padding: 5px 0;
+    text-align: center;
+    width: 14.2857%;
+}
+.event-calendar .clndr-grid .days {
+    width: 100%;
+}
+.event-calendar .clndr-grid .days .day,
+.event-calendar .clndr-grid .days .empty {
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    width: 14.2857%;
+    border: 1px solid #d9dadb;
+}
+.event-calendar .clndr-grid .days .today {
+    background-color: #bcbdbe;
+}
+.event-calendar .clndr-grid .days .day.event,
+.event-calendar .clndr-grid .days .empty.event {
+    background-color: #ef151b;
+    color: #fff;
+}
+.event-calendar .clndr-grid .days .day.adjacent-month .day-number,
+.event-calendar .clndr-grid .days .empty.adjacent-month .day-number {
+    opacity: 0.3;
+}
+.event-calendar .clndr-grid .days .day.event .day-number,
+.event-calendar .clndr-grid .days .empty.event .day-number {
+    opacity: 1;
+}
+
+.event-list {
+    border-bottom: 1px solid #9a9a9a;
+    /*margin: 15px;*/
+    font-size: 14px;
+}
+
+.event-item {
+    padding: 15px 0;
+    border-top: 1px solid #9a9a9a;
+    position: relative;
+}
+
+.event-item .event-date {
+    float: left;
+    width: 40px;
+    margin-right: 15px;
+}
+
+.event-item .event-month {
+    background: #ef151b;
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+}
+
+.event-item .event-day {
+    background: #fff;
+    display: block;
+    color: #242529;
+    font-weight: bold;
+    line-height: 35px;
+    text-align: center;
+}
+
+.event-item .event-title {
+    margin-top: 0;
+    font-weight: normal;
+    color: #212121;
+}
+
+.event-item .event-time {
+    font-size: 12px;
+    color: #7a7a7a;
+    position: absolute;
+    bottom: 15px;
+    left: 55px;
+}
+
+.event-item .event-time i {
+    font-size: 16px;
+    margin-right: 10px;
+}

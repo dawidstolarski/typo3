@@ -1,0 +1,76 @@
+.tabs {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	margin: 20px 0;
+	background: #d9dadb;
+}
+
+/* Nav */
+.tab-menu {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: inline-block;
+	width: 100%;
+	background: #757778;
+}
+
+.tab-menu li {
+	display: block;
+	float: left;
+	position: relative;
+	/*width: 33.33333333%;*/
+	width: 50%;
+	text-align: center;
+}
+
+.tab-menu li.tab-current {
+	z-index: 99;
+	background: #d9dadb;
+}
+
+.tab-menu li a {
+	color: #fff;
+	display: block;
+	font-size: 14px;
+	line-height: 40px;
+	/*padding: 0 15px;*/
+	white-space: nowrap;
+}
+
+.tab-menu li.tab-current a {
+	color: #7a7a7a;
+}
+
+/* Content */
+.tab-content > div {
+	display: none;
+}
+
+.tab-content > div:before,
+.tab-content > div:after {
+	content: '';
+	display: table;
+}
+
+.tab-content > div:after {
+	clear: both;
+}
+
+.tab-content h3 {
+    color: #7a7a7a;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+/* Fallback example */
+.no-js .tab-content > div {
+	display: block;
+	padding-bottom: 2em;
+	border-bottom: 1px solid #47a3da;
+}
+
+.tab-content > div.content-current {
+	display: block;
+}

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="de" type="array">
+		<label index="allowedElementTypes">Erlaubte CE</label>
+		<label index="allowedElementTypesHelp"/>
+		<label index="allowedGridElementTypes"/>
+		<label index="allowedGridElementTypesHelp"/>
+		<label index="dragAndDropHideNewElementWizardInfoOverlay"/>
+		<label index="gridElements"/>
+		<label index="hideColumnHeaders"/>
+		<label index="hideContentPreview"/>
+		<label index="list.collapseElement"/>
+		<label index="list.expandElement"/>
+		<label index="list.collapseAllElements"/>
+		<label index="list.expandAllElements"/>
+		<label index="list.columnName"/>
+		<label index="showGridInformation"/>
+		<label index="tt_content.CType_pi1"/>
+		<label index="tt_content.tx_gridelements_backend_layout"/>
+		<label index="tt_content.tx_gridelements_backend_layout.I.horizontal"/>
+		<label index="tt_content.tx_gridelements_backend_layout.I.none"/>
+		<label index="tt_content.tx_gridelements_backend_layout.I.vertical"/>
+		<label index="tt_content.tx_gridelements_children"/>
+		<label index="tt_content.tx_gridelements_columns"/>
+		<label index="tt_content.tx_gridelements_container"/>
+		<label index="tx_gridelements_backend_layout"/>
+		<label index="tx_gridelements_backend_layout.alias"/>
+		<label index="tx_gridelements_backend_layout.ce_configuration"/>
+		<label index="tx_gridelements_backend_layout.config"/>
+		<label index="tx_gridelements_backend_layout.description"/>
+		<label index="tx_gridelements_backend_layout.div.configuration"/>
+		<label index="tx_gridelements_backend_layout.frame"/>
+		<label index="tx_gridelements_backend_layout.frame.I.-1"/>
+		<label index="tx_gridelements_backend_layout.frame.I.0"/>
+		<label index="tx_gridelements_backend_layout.frame.I.1"/>
+		<label index="tx_gridelements_backend_layout.frame.I.2"/>
+		<label index="tx_gridelements_backend_layout.frame.I.3"/>
+		<label index="tx_gridelements_backend_layout.horizontal"/>
+		<label index="tx_gridelements_backend_layout.horizontal.I.0"/>
+		<label index="tx_gridelements_backend_layout.icon"/>
+		<label index="tx_gridelements_backend_layout.palette.appearance"/>
+		<label index="tx_gridelements_backend_layout.pi_flexform_ds"/>
+		<label index="tx_gridelements_backend_layout.pi_flexform_ds_file"/>
+		<label index="tx_gridelements_backend_layout.title"/>
+		<label index="tx_gridelements_backend_layout.top_level_layout"/>
+		<label index="tx_gridelements_backend_layout_wizard_label"/>
+		<label index="tx_gridelements_clickmenu_pastereference"/>
+		<label index="tx_gridelements_js.allowedElementTypes">Erlaubte CE</label>
+		<label index="tx_gridelements_js.allowedGridElementTypes"/>
+		<label index="tx_gridelements_js.copyfrompage"/>
+		<label index="tx_gridelements_js.drophere"/>
+		<label index="tx_gridelements_js.missingcontenttemplate"/>
+		<label index="tx_gridelements_js.newcontentelementheader"/>
+		<label index="tx_gridelements_js.pasteinto"/>
+		<label index="tx_gridelements_js.pasteafter"/>
+		<label index="tx_gridelements_js.pastecopy"/>
+		<label index="tx_gridelements_js.modal.pastecopy"/>
+		<label index="tx_gridelements_js.modal.button.cancel"/>
+		<label index="tx_gridelements_js.modal.button.pastecopy"/>
+		<label index="tx_gridelements_js.pastereference"/>
+		<label index="tx_gridelements_js.modal.button.pastereference"/>
+		<label index="tx_gridelements_js.modal.paste"/>
+		<label index="tx_gridelements_js.modal.title.paste"/>
+		<label index="tx_gridelements_js.modal.button.paste"/>
+		<label index="tx_gridelements_collapsecontent"/>
+		<label index="tx_gridelements_expandcontent"/>
+		<label index="tx_gridelements_contentcollapsed"/>
+		</languageKey>
+  </data>
+</T3locallangExt>

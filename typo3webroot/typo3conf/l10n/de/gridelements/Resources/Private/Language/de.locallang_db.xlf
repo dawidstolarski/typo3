@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-09-21T18:41:55Z" product-name="gridelements" target-language="de">
+		<header>
+			<type>database</type>
+			<description>Language labels for database tables/fields belonging to extension 'gridelements'</description>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="allowedElementTypes" approved="yes">
+			<source>Allowed CE</source>
+		<target state="translated">Erlaubte CE</target></trans-unit>
+		<trans-unit id="allowedElementTypesHelp">
+			<source>Select the content element types that may be created or moved here.</source>
+		<target></target><alt-trans xml:space="preserve" origin="cpascher"><target>Content Elemente auswählen die hier erstellt oder hierher bewegt werden dürfen.</target></alt-trans></trans-unit>
+		<trans-unit id="allowedGridElementTypes">
+			<source>Allowed Grids</source>
+		<target></target><alt-trans xml:space="preserve" origin="cpascher"><target>Zugelassene Grids</target></alt-trans></trans-unit>
+		<trans-unit id="allowedGridElementTypesHelp">
+			<source>Fill in the Gridelements types that may be created or moved here.</source>
+		<target></target><alt-trans xml:space="preserve" origin="cpascher"><target>Alle Gridelemente angeben die hier erstellt oder hierher bewegt werden dürfen.</target></alt-trans></trans-unit>
+		<trans-unit id="dragAndDropHideNewElementWizardInfoOverlay">
+			<source>Hide info overlays for the new content element drag in wizard.</source>
+		<target></target></trans-unit>
+		<trans-unit id="gridElements">
+			<source>Grid Elements</source>
+		<target></target><alt-trans xml:space="preserve" origin="cpascher"><target>Grid Elemente</target></alt-trans></trans-unit>
+		<trans-unit id="hideColumnHeaders">
+			<source>Hide column headers.</source>
+		<target></target><alt-trans xml:space="preserve" origin="cpascher"><target>Spaltenüberschrift verstecken.</target></alt-trans></trans-unit>
+		<trans-unit id="hideContentPreview">
+			<source>Hide content element preview.</source>
+		<target></target><alt-trans xml:space="preserve" origin="cpascher"><target>Verstecke Content Element Vorschau.</target></alt-trans></trans-unit>
+		<trans-unit id="list.collapseElement">
+			<source>Collapse list of child elements</source>
+		<target></target><alt-trans xml:space="preserve" origin="cpascher"><target>Liste der Kind-Elemente zuklappen.</target></alt-trans></trans-unit>
+		<trans-unit id="list.expandElement">
+			<source>Expand list of child elements</source>
+		<target></target><alt-trans xml:space="preserve" origin="cpascher"><target>Liste der Kind Elemente ausklappen</target></alt-trans></trans-unit>
+		<trans-unit id="list.collapseAllElements">
+			<source>Collapse all grid containers</source>
+		<target></target><alt-trans xml:space="preserve" origin="cpascher"><target>Alle Grid Container zusammenklappen</target></alt-trans></trans-unit>
+		<trans-unit id="list.expandAllElements">
+			<source>Expand all grid containers</source>
+		<target></target><alt-trans xml:space="preserve" origin="cpascher"><target>Alle Grid Container ausklappen</target></alt-trans></trans-unit>
+		<trans-unit id="list.columnName">
+			<source>Column:</source>
+		<target></target><alt-trans xml:space="preserve" origin="typo3dan"><target>Spalte:</target></alt-trans></trans-unit>
+		<trans-unit id="showGridInformation">
+			<source>Show grid layout information.</source>
+		<target></target><alt-trans xml:space="preserve" origin="cpascher"><target>Zeige Grid Layout Information.</target></alt-trans></trans-unit>
+		<trans-unit id="tt_content.CType_pi1">
+			<source>Grid Element</source>
+		<target></target><alt-trans xml:space="preserve" origin="cpascher"><target>Grid Element</target></alt-trans></trans-unit>
+		<trans-unit id="tt_content.tx_gridelements_backend_layout">
+			<source>Grid Layout</source>
+		<target></target><alt-trans xml:space="preserve" origin="cpascher"><target>Grid Layout</target></alt-trans></trans-unit>
+		<trans-unit id="tt_content.tx_gridelements_backend_layout.I.horizontal">
+			<source>Dynamic Columns (horizontal)</source>
+		<target></target><alt-trans xml:space="preserve" origin="cpascher"><target>Dynamische Spalten (horizontal)</target></alt-trans></trans-unit>
+		<trans-unit id="tt_content.tx_gridelements_backend_layout.I.none">
+			<source>None</source>
+		<target></target><alt-trans xml:space="preserve" origin="typo3dan"><target>Keine</target></alt-trans></trans-unit>
+		<trans-unit id="tt_content.tx_gridelements_backend_layout.I.vertical">
+			<source>Dynamic Rows (vertical)</source>
+		<target></target><alt-trans xml:space="preserve" origin="cpascher"><target>Dynamische Zeilen (vertikal)</target></alt-trans></trans-unit>
+		<trans-unit id="tt_content.tx_gridelements_children">
+			<source>Content elements</source>
+		<target></target><alt-trans xml:space="preserve" origin="cpascher"><target>Inhaltselemente</target></alt-trans></trans-unit>
+		<trans-unit id="tt_content.tx_gridelements_columns">
+			<source>Grid Container Columns</source>
+		<target></target><alt-trans xml:space="preserve" origin="cpascher"><target>Grid Container Spalten</target></alt-trans></trans-unit>
+		<trans-unit id="tt_content.tx_gridelements_container">
+			<source>Grid Container</source>
+		<target></target><alt-trans xml:space="preserve" origin="cpascher"><target>Grid Container</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout">
+			<source>CE Backend Layout</source>
+		<target></target><alt-trans xml:space="preserve" origin="cpascher"><target>CE Backend Layout</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.alias">
+			<source>Alias</source>
+		<target></target><alt-trans xml:space="preserve" origin="cpascher"><target>Alias</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.ce_configuration">
+			<source>Content Element Configuration</source>
+		<target></target><alt-trans xml:space="preserve" origin="cpascher"><target>Inhaltselement Konfiguration</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.config">
+			<source>Grid Configuration</source>
+		<target></target><alt-trans xml:space="preserve" origin="cpascher"><target>Grid Konfiguration</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.description">
+			<source>Description</source>
+		<target></target><alt-trans xml:space="preserve" origin="typo3dan"><target>Beschreibung</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.div.configuration">
+			<source>Configuration</source>
+		<target></target><alt-trans xml:space="preserve" origin="typo3dan"><target>Konfiguration</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.frame">
+			<source>Frame</source>
+		<target></target><alt-trans xml:space="preserve" origin="typo3dan"><target>Rahmen</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.frame.I.-1">
+			<source>Neutral</source>
+		<target></target><alt-trans xml:space="preserve" origin="typo3dan"><target>Neutral</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.frame.I.0">
+			<source>-</source>
+		<target></target><alt-trans xml:space="preserve" origin="typo3dan"><target>-</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.frame.I.1">
+			<source>Red</source>
+		<target></target><alt-trans xml:space="preserve" origin="typo3dan"><target>Rot</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.frame.I.2">
+			<source>Green</source>
+		<target></target><alt-trans xml:space="preserve" origin="typo3dan"><target>Grün</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.frame.I.3">
+			<source>Blue</source>
+		<target></target><alt-trans xml:space="preserve" origin="typo3dan"><target>Blau</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.horizontal">
+			<source>Group children</source>
+		<target></target><alt-trans xml:space="preserve" origin="cpascher"><target>Gruppenkinder</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.horizontal.I.0">
+			<source>Side by side</source>
+		<target></target><alt-trans xml:space="preserve" origin="typo3dan"><target>Nebeneinander</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.icon">
+			<source>Icon</source>
+		<target></target><alt-trans xml:space="preserve" origin="typo3dan"><target>Symbol</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.palette.appearance">
+			<source>Appearance</source>
+		<target></target><alt-trans xml:space="preserve" origin="typo3dan"><target>Darstellung</target></alt-trans><alt-trans xml:space="preserve" origin="cpascher"><target>Erscheinungsbild</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.pi_flexform_ds">
+			<source>Flexform Configuration</source>
+		<target></target><alt-trans xml:space="preserve" origin="typo3dan"><target>Flexform Konfiguration</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.pi_flexform_ds_file">
+			<source>Flexform Configuration File (overrides direct input)</source>
+		<target></target><alt-trans xml:space="preserve" origin="typo3dan"><target>Flexform-Konfigurationsdatei (überschreibt die direkte Eingabe)</target></alt-trans><alt-trans xml:space="preserve" origin="cpascher"><target>Flexform-Konfigurationsdatei (überschreibt direkte Eingabe)</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.title">
+			<source>Title</source>
+		<target></target><alt-trans xml:space="preserve" origin="typo3dan"><target>Titel</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.top_level_layout">
+			<source>Top Level Layout</source>
+		<target></target></trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout_wizard_label">
+			<source>Grid Elements</source>
+		<target></target><alt-trans xml:space="preserve" origin="cpascher"><target>Grid Elemente</target></alt-trans><alt-trans xml:space="preserve" origin="typo3dan"><target>Grid Elements</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_clickmenu_pastereference">
+			<source>Paste reference after</source>
+		<target></target><alt-trans xml:space="preserve" origin="cpascher"><target>Kopiere Referenz nach</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_js.allowedElementTypes" approved="yes">
+			<source>Allowed CE</source>
+		<target state="translated">Erlaubte CE</target><alt-trans xml:space="preserve" origin="cpascher"><target>Zugelassene CE</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_js.allowedGridElementTypes" approved="yes">
+			<source>Allowed Grids</source>
+		<target></target><alt-trans xml:space="preserve" origin="cpascher"><target>Zugelassene Grids</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_js.copyfrompage">
+			<source>Copy content from another page to this place</source>
+		<target></target><alt-trans xml:space="preserve" origin="cpascher"><target>Kopiere Inhalt von einer anderen Seite an diese Stelle</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_js.drophere">
+			<source>Drop Here</source>
+		<target></target><alt-trans xml:space="preserve" origin="typo3dan"><target>Hier ablegen</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_js.missingcontenttemplate">
+			<source>Missing Content Template</source>
+		<target></target><alt-trans xml:space="preserve" origin="cpascher"><target>Fehlendes Inhalts-Template</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_js.newcontentelementheader">
+			<source>New</source>
+		<target></target><alt-trans xml:space="preserve" origin="typo3dan"><target>Neu</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_js.pasteinto">
+			<source>Paste into this column</source>
+		<target></target><alt-trans xml:space="preserve" origin="cpascher"><target>Einfügen in diese Spalte</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_js.pasteafter">
+			<source>Paste after this record</source>
+		<target></target><alt-trans xml:space="preserve" origin="cpascher"><target>Einfügen nach diesem Eintrag</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_js.pastecopy">
+			<source>Paste copy into this column</source>
+		<target></target><alt-trans xml:space="preserve" origin="cpascher"><target>Kopie in diese Spalte einfügen</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_js.modal.pastecopy">
+			<source>How do you want to paste that clipboard content here?</source>
+		<target></target><alt-trans xml:space="preserve" origin="cpascher"><target>Wie möchtest du den Inhalt aus dem Zwischenspeicher hier einfügen?</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_js.modal.button.cancel">
+			<source>Cancel</source>
+		<target></target><alt-trans xml:space="preserve" origin="typo3dan"><target>Abbrechen</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_js.modal.button.pastecopy">
+			<source>Paste copy</source>
+		<target></target><alt-trans xml:space="preserve" origin="typo3dan"><target>Kopie einfügen</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_js.pastereference">
+			<source>Paste reference into this column</source>
+		<target></target><alt-trans xml:space="preserve" origin="typo3dan"><target>Referenz in diese Spalte einfügen</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_js.modal.button.pastereference">
+			<source>Paste reference</source>
+		<target></target><alt-trans xml:space="preserve" origin="typo3dan"><target>Referenz einfügen</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_js.modal.paste">
+			<source>Do you want to paste that clipboard content here?</source>
+		<target></target><alt-trans xml:space="preserve" origin="typo3dan"><target>Möchten Sie den Inhalt aus der Zwischenablage hier platzieren?</target></alt-trans><alt-trans xml:space="preserve" origin="cpascher"><target>Möchten Sie den Inhalt aus der Zwischenablage hier einfügen?</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_js.modal.title.paste">
+			<source>Paste record</source>
+		<target></target><alt-trans xml:space="preserve" origin="typo3dan"><target>Datensatz einfügen</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_js.modal.button.paste">
+			<source>Paste</source>
+		<target></target><alt-trans xml:space="preserve" origin="typo3dan"><target>Einfügen</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_collapsecontent">
+			<source>Collapse content in column</source>
+		<target></target><alt-trans xml:space="preserve" origin="typo3dan"><target>Inhalt der Spalte einklappen</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_expandcontent">
+			<source>Expand content in column</source>
+		<target></target><alt-trans xml:space="preserve" origin="typo3dan"><target>Inhalt der Spalte ausklappen</target></alt-trans></trans-unit>
+		<trans-unit id="tx_gridelements_contentcollapsed">
+			<source>This column is collapsed!</source>
+		<target></target><alt-trans xml:space="preserve" origin="cpascher"><target>Diese Spalte ist zusammengeklappt!</target></alt-trans></trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,20 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<div id="quicksearch">
+
+    <f:form action="search" method="post" action="search" controller="Search" extensionName="indexedsearch" pluginName="pi2" pageUid="{settings.targetPid}">
+
+        <f:form.textfield name="search[sword]" value="{sword}" class="quicksearch-sword is-hidden" />
+
+          <i class="icon-search searchtoggle"></i>
+
+          <button type="submit" name="search[submitButton]" value="Search" class="quicksearch-submit hidden"><i class="icon-search"></i></button>
+
+          <f:comment><f:form.submit name="search[submitButton]" value="Search" class="quicksearch-submit "/></f:comment>
+
+    </f:form>
+
+</div>
+
+</html>
+

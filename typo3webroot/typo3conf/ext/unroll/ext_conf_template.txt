@@ -1,0 +1,20 @@
+# cat=basic/enable/10; type=input; label=LLL:EXT:unroll/Resources/Private/Language/locallang.xlf:extConf.buttons
+buttons = _savedok,_savedokview,_savedoknew,_saveandclosedok
+
+# cat=basic/enable/15; type=boolean; label=LLL:EXT:unroll/Resources/Private/Language/locallang.xlf:extConf.unroll
+unroll = 1
+
+# cat=basic/enable/20; type=boolean; label=LLL:EXT:unroll/Resources/Private/Language/locallang.xlf:extConf.showLabelSave
+showLabelSave = 1
+
+# cat=basic/enable/25; type=boolean; label=LLL:EXT:unroll/Resources/Private/Language/locallang.xlf:extConf.showLabelSaveDokView
+showLabelSaveDokView = 1
+
+# cat=basic/enable/30; type=boolean; label=LLL:EXT:unroll/Resources/Private/Language/locallang.xlf:extConf.showLabelSaveDokNew
+showLabelSaveDokNew = 1
+
+# cat=basic/enable/35; type=boolean; label=LLL:EXT:unroll/Resources/Private/Language/locallang.xlf:extConf.showLabelSaveAndClose
+showLabelSaveAndClose = 1
+
+# cat=basic/enable/40; type=boolean; label=LLL:EXT:unroll/Resources/Private/Language/locallang.xlf:extConf.allowUserSettings
+allowUserSettings = 0

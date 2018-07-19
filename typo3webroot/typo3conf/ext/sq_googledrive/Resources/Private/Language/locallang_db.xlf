@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-08-25T10:10:03Z" product-name="sq_googledrive">
+		<header/>
+		<body>
+			<trans-unit id="tx_sqgoogledrive_domain_model_group">
+				<source>Group</source>
+			</trans-unit>
+			<trans-unit id="tx_sqgoogledrive_domain_model_group.customerlogo">
+				<source>Customerlogo</source>
+			</trans-unit>
+			<trans-unit id="tx_sqgoogledrive_domain_model_group.consultantid">
+				<source>Consultantid</source>
+			</trans-unit>
+			<trans-unit id="tx_sqgoogledrive_domain_model_group.searchresultpage">
+				<source>Searchresultpage</source>
+			</trans-unit>
+			<trans-unit id="tx_sqgoogledrive_domain_model_group.googledrivesettings">
+				<source>Googledrivesettings</source>
+			</trans-unit>
+			<trans-unit id="fe_groups.tx_extbase_type.Tx_SqGoogledrive_Group">
+				<source>SQ Google Drive Group</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
